@@ -9414,7 +9414,8 @@ button.bg-dark:hover {
   text-align:right!important
 }
 .text-center {
-  text-align:center!important
+  text-align:center!important;
+  margin-top: 80px;
 }
 @media (min-width:576px) {
   .text-sm-left {
@@ -10604,12 +10605,12 @@ form.user .custom-checkbox.small label {
 }
 form.user .form-control-user {
   font-size:.8rem;
-  border-radius:10rem;
+  /*! border-radius:10rem; */
   padding:1.5rem 1rem
 }
 form.user .btn-user {
   font-size:.8rem;
-  border-radius:10rem;
+  /*! border-radius:10rem; */
   padding:.75rem 1rem
 }
 .btn-google {

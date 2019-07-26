@@ -7,7 +7,7 @@
                 <aside class="col-md-3">
 <!--                    <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a> -->
                 </aside>
-                <aside class="col-md-9">
+                <aside class="col-md-8">
 
                     <!--// Navigation \\-->
                     <a href="index.php#menu" class="menu-link active"><span></span></a>
@@ -28,6 +28,16 @@
                                     <li><a href="ebooks_borrowed.php">E-Books</a></li>
                                 </ul>
                             </li>
+                        </ul>
+                    </nav>
+                </aside>
+                 <aside class="col-md-1">
+                     <nav id="menu" class="menu navbar navbar-default">
+                         <ul class="level-1 navbar-nav">
+                             <li><a href="<?php echo BASE_URL; ?>logout.php">Logout</a></li>
+                         </ul>
+                     </nav>
+                 </aside>
 
             </div>
         </div>
