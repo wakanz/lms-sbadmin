@@ -1,0 +1,37 @@
+.dropzone {
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer; }
+.dropzone .dropzone-msg-title {
+    margin: 0 0 5px 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.1rem; }
+.dropzone .dropzone-msg-desc {
+    font-size: 0.9rem; }
+.dropzone .dz-preview .dz-image {
+    border-radius: 4px; }
+
+.dropzone {
+    border: 2px dashed #ebedf2; }
+.dropzone .dropzone-msg-title {
+    color: #595d6e; }
+.dropzone .dropzone-msg-desc {
+    color: #74788d; }
+.dropzone.dropzone-brand {
+    border-color: #5d78ff; }
+.dropzone.dropzone-light {
+    border-color: #ffffff; }
+.dropzone.dropzone-dark {
+    border-color: #282a3c; }
+.dropzone.dropzone-primary {
+    border-color: #5867dd; }
+.dropzone.dropzone-success {
+    border-color: #0abb87; }
+.dropzone.dropzone-info {
+    border-color: #5578eb; }
+.dropzone.dropzone-warning {
+    border-color: #ffb822; }
+.dropzone.dropzone-danger {
+    border-color: #fd397a; }
