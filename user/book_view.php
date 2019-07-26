@@ -113,7 +113,7 @@ if (isset($_GET['bid']))
 									<div class="ereaders-book-grid-text">
 										<h2><a href="<?php echo USER_PATH; ?>ebook_view.php?id=<?php echo $row['book_id']; ?>"><?php echo $row['book_name']; ?></a></h2>
 										<small>By: <?php echo $row['book_author']; ?></small>
-										<a href="<?php echo USER_PATH; ?>ebook_view.php?id=<?php echo $row['book_id']; ?>" class="ereaders-simple-btn ereaders-bgcolor">Reserve</a>
+										<a href="?id=<?php echo $row['book_id']; ?>" class="ereaders-simple-btn ereaders-bgcolor">Reserve</a>
 									</div>
 								</li>
                                     <?php } } ?>

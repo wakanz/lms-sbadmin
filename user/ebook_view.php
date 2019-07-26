@@ -16,7 +16,7 @@ if (isset($_GET['id']))
                 <div class="row">
                     <?php
                     $user = $_SESSION['id'];
-                    $id=$_GET['id'];        // Collecting data from query string
+                    $id=$_GET['bid'];        // Collecting data from query string
                     if(!is_numeric($id)){ // Checking data it is a number or not
                         echo "Data Error";
                         exit;
