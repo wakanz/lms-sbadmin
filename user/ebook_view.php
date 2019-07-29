@@ -1,10 +1,5 @@
 <?php
 include "includes/navbar.php";
-if (isset($_GET['id']))
-{
-    reserveEbook();
-
-}
 ?>
 
     <!--// Main Content \\-->
@@ -52,7 +47,7 @@ if (isset($_GET['id']))
                                                         <span> <?php echo $row['book_isbn']; ?></span>
                                                     </li>
                                                 </ul>
-                                                <a href="?id=<?php echo $row['book_id']; ?>" class="ereaders-detail-btn">Reserve <i class="icon ereaders-shopping-bag"></i></a>
+                                                <a href="ebook.php?id=<?php echo $row['book_id']; ?>" class="ereaders-detail-btn">Read Book<i class="icon ereaders-shopping-bag"></i></a>
                                             </div>
                                         </div>
                                     </div>
@@ -110,7 +105,7 @@ if (isset($_GET['id']))
                                                     <div class="ereaders-book-grid-text">
                                                         <h2><a href="<?php echo USER_PATH; ?>ebook_view.php?id=<?php echo $row['book_id']; ?>"><?php echo $row['book_name']; ?></a></h2>
                                                         <small>By: <?php echo $row['book_author']; ?></small>
-                                                        <a href="<?php echo USER_PATH; ?>ebook_view.php?id=<?php echo $row['book_id']; ?>" class="ereaders-simple-btn ereaders-bgcolor">Reserve</a>
+                                                        <a href="<?php echo USER_PATH; ?>ebook.php?id=<?php echo $row['book_id']; ?>" class="ereaders-simple-btn ereaders-bgcolor">Read Book</a>
                                                     </div>
                                                 </li>
                                             <?php } } ?>

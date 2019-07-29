@@ -15,19 +15,8 @@
                         <ul class="level-1 navbar-nav">
                             <li><a href="index.php">Home</a></li>
                             <li><a href="ebooks.php">E-books</a></li>
-                            <li class="active"><a href="#">Reserved Books</a><span class="has-subnav"><i class="fa fa-angle-down"></i></span>
-                                <ul class="sub-menu level-2">
-                                    <li><a href="books_reserved.php">Books</a></li>
-                                    <li><a href="ebooks_reserved.php">E-Books</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="posts.php">Blog</a></li>
-                            <li class="active"><a href="#">Issued Books</a><span class="has-subnav"><i class="fa fa-angle-down"></i></span>
-                                <ul class="sub-menu level-2">
-                                    <li><a href="books_borrowed.php">Books</a></li>
-                                    <li><a href="ebooks_borrowed.php">E-Books</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="books_reserved.php">Reserved Books</a></li>
+                            <li><a href="books_borrowed.php">Issued Books</a></li>
                         </ul>
                     </nav>
                 </aside>

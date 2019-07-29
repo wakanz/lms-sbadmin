@@ -30,7 +30,7 @@ if(isset($_POST['addbook']))
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="description">Book Description</label>
-                                <input type="text" class="form-control" name="desc" placeholder="Enter Book Description" required>
+                                <textarea type="text" class="form-control" name="desc" placeholder="Enter Book Description" required></textarea>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="p_date">Publish date</label>

@@ -48,6 +48,7 @@
 <script src="<?php echo BASE_URL; ?>assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- Core plugin JavaScript-->
 <script src="<?php echo BASE_URL; ?>assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+<link href="<?php echo BASE_URL; ?>assets/vendor/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js" rel="stylesheet" type="text/css">
 <!-- Custom scripts for all pages-->
 <script src="<?php echo BASE_URL; ?>assets/js/script.min.js"></script>
 <script src="<?php echo BASE_URL; ?>assets/js/custom.js"></script>

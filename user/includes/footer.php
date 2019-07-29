@@ -8,7 +8,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p><i class="fa fa-copyright"></i> 2019, All Right Reserved </p>
+                    <p><i class="fa fa-copyright"></i> &copy; <?php echo date("Y"); ?>, All Right Reserved </p>
                 </div>
             </div>
         </div>

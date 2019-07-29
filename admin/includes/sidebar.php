@@ -40,6 +40,19 @@
             <span>E-Books</span></a>
     </li>
     <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Transactions</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar" style="">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <a class="collapse-item" href="<?php echo ADMIN_PATH; ?>book_issue.php">Issue Book</a>
+                <a class="collapse-item" href="<?php echo ADMIN_PATH; ?>book_return.php">Return Book</a>
+                <a class="collapse-item" href="<?php echo ADMIN_PATH; ?>books_reserved.php">Reserved Books</a>
+            </div>
+        </div>
+    </li>
+    <li class="nav-item">
         <a class="nav-link" href="<?php echo ADMIN_PATH; ?>author_list.php">
             <i class="fas fa-fw fa-table"></i>
             <span>Authors</span></a>

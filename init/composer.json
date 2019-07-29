@@ -1,0 +1,7 @@
+{
+    "require": {
+        "ncjoes/poppler-php": "^1.0",
+        "tonchik-tm/pdf-to-html": "^1.0",
+        "gufy/pdftohtml-php": "^2.0"
+    }
+}

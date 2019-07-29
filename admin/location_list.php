@@ -48,7 +48,7 @@ if (isset($_GET['id']))
                                 <td>
                                     <a href="<?php echo ADMIN_PATH; ?>location_edit.php?id=<?php echo $row['location_id']; ?>" title="Edit"><i class="fas fa-edit"></i></a>
                                     <a href="?id=<?php echo $row['location_id']; ?>" class="del" title="Delete"><i class="far fa-trash-alt"></i></a>
-                                </>
+                                </td>>
                             </tr>
                         <?php } }?>
                     </tbody>

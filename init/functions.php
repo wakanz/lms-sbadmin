@@ -108,11 +108,100 @@ function bookReserve()
 
          while ($row = mysqli_fetch_assoc($books)) {
              $n = ucfirst($_SESSION['name'] . ' ' . 'Reserved' . ' ' . $row['book_name']);
-             $sql = $db->query("INSERT INTO notifications (user_id,notification) VALUES ('$user_id', '$n')");
+             $sql .= $db->query("INSERT INTO notifications (user_id,notification,date) VALUES ('$user_id', '$n', now())");
          }
-         echo '<div class="alert alert-success" role="alert">Book Reserved Successfully.</div>';
+         header('location: index.php');
      }
  }
+}
+
+function issueBook()
+{
+    global $db;
+    if (isset($_POST['submit'])) {
+
+
+
+
+        $book_id = $_POST['books'];
+        $user_id = $_POST['user'];
+        $due_date =  date('Y-m-d', strtotime(str_replace('-', '/', $_POST['r_date'])));
+        //$Id = $db->insert_id;
+
+
+
+        $sql = $db->query("INSERT INTO borrow (book_id,book_type,user_id,date_out,due_date) VALUES ('$book_id',1,'$user_id',now(),'$due_date')");
+
+        $Id = $db->insert_id;
+
+        $sql .= $db->query ("INSERT INTO fines (borrow_id) VALUES ('$Id')") or die(mysqli_error($db));
+
+
+        $sql .= $db->query("UPDATE books SET book_qty = (book_qty - 1) where book_id = '$book_id'");
+
+        if ($sql){
+            echo '<div class="alert alert-success" role="alert">Book Issued Successfully.</div>';
+        }
+
+    }
+}
+
+function returnBook(){
+    global $db;
+
+
+
+        $Id = $_POST['r_id'];
+
+//$Id = $db->insert_id;
+
+
+//fines 0 -> not paid and 1-> paid
+//borrow 1 -> not returned 0 -> returned book
+
+        $sql = $db->query("UPDATE borrow, books SET borrow.status = '0', borrow.date_in = now(), books.book_qty = (book_qty + 1) WHERE borrow_id='$Id' AND borrow.book_id = books.book_id");
+        $sql .= $db->query("UPDATE fines SET status = 1 WHERE borrow_id = '$Id'");
+
+
+        if ($sql){
+            echo '<script type="text/javascript">
+alert("Book Returned Successfully");
+location="book_return.php";
+</script>';
+        }
+
+
+}
+
+function confirmBook()
+{
+    global $db;
+    $Id = $_POST['r_id'];
+    $b_id = $_POST['b_id'];
+    $user_id = $_POST['u_id'];
+    $due_date =  date('Y-m-d', strtotime(str_replace('-', '/', $_POST['r_date'])));
+    //$Id = $db->insert_id;
+
+
+
+    $sql = $db->query("UPDATE borrow SET status = 1, date_out= now(),due_date = '$due_date' WHERE reserve_id = '$Id'");
+    $sql .= $db->query("UPDATE reserved SET  status = 1 WHERE reserve_id = '$Id'");
+
+    $sql .= $db->query("INSERT INTO fines (borrow_id) VALUES ('$Id')");
+
+    $sql .= $db->query("UPDATE books SET book_qty = (book_qty - 1) WHERE book_id = '$b_id'");
+    $sql .= $db->query("DELETE FROM reserved WHERE status = 1");
+
+    if ($sql == TRUE) {
+        $books = $db->query("SELECT * FROM books WHERE book_id = '$b_id'");
+
+        while ($row = mysqli_fetch_assoc($books)) {
+            $n = ucfirst('Admin'. ' ' . 'Approved' . ' ' . $row['book_name'] . ' ' . 'Request');
+            $sql = $db->query("INSERT INTO notifications (user_id,notification,date,type) VALUES ('$user_id', '$n', now(), 2)");
+        }
+
+        header('location: books_reserved.php');
+    }
 }
 
 function userdelReserved()
@@ -146,7 +235,7 @@ function ebookReserve()
 
             while ($row = mysqli_fetch_assoc($books)) {
                 $n = ucfirst($_SESSION['name'] . ' ' . 'Reserved' . ' ' . $row['book_name']);
-                $sql = $db->query("INSERT INTO notifications (user_id,notification) VALUES ('$user_id', '$n')");
+                $sql = $db->query("INSERT INTO notifications (user_id,notification,date) VALUES ('$user_id', '$n', now())");
             }
             echo '<div class="alert alert-success" role="alert">E-Book Reserved Successfully.</div>';
         }
@@ -507,8 +596,24 @@ function delCategory()
     $sql = $db->query("DELETE FROM categories where category_id='$id'");
 }
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                            LOCATION
+                                            SETTINGS
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+function editSettings()
+{
+    global $db;
+
+    $name            =           $_POST['name'];
+    $fine            =           $_POST['fine'];
+
+    $sql = $db->query("UPDATE settings set site_name='$name', fine = '$fine' where id = 1 ");
+
+    if ($sql)
+    {
+        echo '<div class="alert alert-success" role="alert">Setting Updated.</div>';
+    }
+}
+
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                                             LOCATION

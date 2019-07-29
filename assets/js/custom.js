@@ -11,7 +11,7 @@
 // });
 
 $( function() {
-    $( "#datepicker" ).datepicker();
+    $( "#datepicker" ).datepicker({ minDate: 0 });
 } );
 
 $(document).ready(function() {

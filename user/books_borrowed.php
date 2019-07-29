@@ -13,6 +13,7 @@ if (isset($_GET['id']))
         <!--// Main Section \\-->
         <div class="ereaders-main-section">
             <div class="container">
+                <div class="ereaders-book-wrap">
                 <div class="row">
                     <div class="col-md-12">
                         <table class="table" id="myTable">
@@ -76,6 +77,7 @@ if (isset($_GET['id']))
                             </tbody>
                         </table>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

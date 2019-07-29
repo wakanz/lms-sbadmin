@@ -1,14 +1,14 @@
 <?php
 
-$dbhost = 'localhost';
-$dbuser = 'admin_lms';
-$dbpass = 'o0En9oXiTUpqzV8W';
-$dbname = 'cilms';
-
 //$dbhost = 'localhost';
-//$dbuser = 'root';
-//$dbpass = 'root';
+//$dbuser = 'admin_lms';
+//$dbpass = 'o0En9oXiTUpqzV8W';
 //$dbname = 'cilms';
+
+$dbhost = 'localhost';
+$dbuser = 'root';
+$dbpass = 'root';
+$dbname = 'cilms';
 
 $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 

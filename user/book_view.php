@@ -16,12 +16,11 @@ if (isset($_GET['bid']))
 				<div class="row">
                     <?php
                     $user = $_SESSION['id'];
-                    $id = '';
-                    if( isset( $_GET['id'])) {
-                        $id = $_GET['id'];
-                    }         // Collecting data from query string
 
-                    $query = $db->query("select * from books where book_id= '$id'");
+                    // Collecting data from query string
+                    $id = $_GET['id'];
+
+                    $query = $db->query("SELECT * FROM books WHERE book_id = '$id'");
 
                     /* associative array */
                     if ($query->num_rows > 0) {
