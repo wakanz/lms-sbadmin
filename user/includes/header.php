@@ -10,7 +10,7 @@ if (!isset($_SESSION['loggedin'])) {
 
 }
 
-define("BASE_URL","https://slms.me/");
+define("BASE_URL","https://www.slms.me/");
 define("ROOT_PATH", $_SERVER["DOCUMENT_ROOT"] . "/");
 
 define("ADMIN_PATH", "/admin/");

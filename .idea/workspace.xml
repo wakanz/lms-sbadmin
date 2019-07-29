@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31aa2c15-d0ea-4101-b3e4-4067fe90021a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/books_reserved.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/confirm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/profile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/settings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user/ebook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/book_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/book_add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/book_issue.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/book_issue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/book_return.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/book_return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/sidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/includes/topbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/includes/topbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/location_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/location_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/return.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/return.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/init/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loader.php" beforeDir="false" afterPath="$PROJECT_DIR$/loader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/book_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/book_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/books_borrowed.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/books_borrowed.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/ebook_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/ebook_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/includes/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/includes/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/includes/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/includes/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/includes/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/user/includes/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/includes/topbar.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
@@ -109,14 +87,18 @@
         <entry file="file://$PROJECT_DIR$/admin/includes/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="252">
-              <caret line="12" column="7" selection-start-line="12" selection-end-line="12" selection-end-column="41" />
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logout.php">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/user/includes/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -156,10 +138,10 @@
       <find>returnB</find>
       <find>date</find>
       <find>edit</find>
-      <find>log</find>
       <find>notif</find>
       <find>notifi</find>
       <find>bookRe</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -215,7 +197,6 @@
         <option value="$PROJECT_DIR$/admin/book_list.php" />
         <option value="$PROJECT_DIR$/user/assets/css/style.css" />
         <option value="$PROJECT_DIR$/assets/css/style.css" />
-        <option value="$PROJECT_DIR$/user/includes/header.php" />
         <option value="$PROJECT_DIR$/user/ebooks.php" />
         <option value="$PROJECT_DIR$/admin/includes/sidebar.php" />
         <option value="$PROJECT_DIR$/init/database.php" />
@@ -223,7 +204,6 @@
         <option value="$PROJECT_DIR$/admin/return.php" />
         <option value="$PROJECT_DIR$/admin/books_reserved.php" />
         <option value="$PROJECT_DIR$/user/includes/footer.php" />
-        <option value="$PROJECT_DIR$/admin/includes/header.php" />
         <option value="$PROJECT_DIR$/admin/includes/footer.php" />
         <option value="$PROJECT_DIR$/assets/js/custom.js" />
         <option value="$PROJECT_DIR$/user/ebook_view.php" />
@@ -240,12 +220,14 @@
         <option value="$PROJECT_DIR$/init/functions.php" />
         <option value="$PROJECT_DIR$/user/book_view.php" />
         <option value="$PROJECT_DIR$/admin/includes/topbar.php" />
+        <option value="$PROJECT_DIR$/admin/includes/header.php" />
+        <option value="$PROJECT_DIR$/user/includes/header.php" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1642" />
-    <option name="y" value="132" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
+    <option name="y" value="28" />
     <option name="width" value="1504" />
     <option name="height" value="404" />
   </component>
@@ -345,19 +327,19 @@
       <workItem from="1563969017252" duration="30937000" />
       <workItem from="1564166252242" duration="4403000" />
       <workItem from="1564321091460" duration="14416000" />
-      <workItem from="1564396446600" duration="10766000" />
+      <workItem from="1564396446600" duration="10800000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121571000" />
+    <option name="totallyTimeSpent" value="121605000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1642" y="132" width="1504" height="404" extended-state="0" />
+    <frame x="1440" y="28" width="1920" height="1006" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3218707" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2502674" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
@@ -491,13 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="17" column="74" selection-start-line="17" selection-start-column="74" selection-end-line="17" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -684,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="7" selection-start-line="12" selection-end-line="12" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/profile.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -722,6 +690,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="107" column="30" selection-start-line="107" selection-start-column="30" selection-end-line="107" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
         </state>
       </provider>
     </entry>
